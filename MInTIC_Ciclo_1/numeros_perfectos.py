@@ -1,3 +1,7 @@
+"""
+    The number perfects are when a number and the sum of your dividers are equals
+    Example 6: 1 + 2 + 3 = 6
+"""
 number = int(input("Enter the number: "))
 total = 0
 

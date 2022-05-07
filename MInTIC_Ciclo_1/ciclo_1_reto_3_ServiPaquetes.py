@@ -1,23 +1,22 @@
+numberPackages = int(input())
+totalCost = 0
 
-numeroPaquetes = int(input("Ingrese el numero de paquetes a procesar: "))
-totalVolumen = 0
+for i in range(numberPackages):
+    high = float(input())
+    wide = float(input())
+    deep = float(input())
 
-for i in range(numeroPaquetes):
-    alto = float(input())
-    ancho = float(input())
-    profundo = float(input())
+    volume = high * wide * deep
+    cost_envio = volume * 5
 
-    volumen = alto * ancho * profundo
-    costo_envio = volumen * 5
+    if high > 30:
+        cost_envio += 2000
+    if cost_envio > 10000:
+        cost_envio += (cost_envio * 0.19)
 
-    if (alto > 30):
-        costo_envio = costo_envio + 2000
-    if (costo_envio > 10000):
-        costo_envio = costo_envio + (costo_envio * 0.19)
+    print(volume)
+    print(cost_envio)
 
-    print(volumen)
-    print(costo_envio)
+    totalCost += cost_envio
 
-    totalVolumen += volumen
-
-print(totalVolumen)
+print(totalCost)
