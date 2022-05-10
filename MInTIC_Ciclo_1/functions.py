@@ -8,3 +8,5 @@ number2 = int(input("Enter the second number: "))
 
 result = sum_function(number1, number2)
 print("The result of sum is: " + str(result))
+
+# Validate if the number is prime
