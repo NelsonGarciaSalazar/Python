@@ -1,4 +1,5 @@
 # CONVERSIONS
+import math
 
 # Example of name varible
 number_test = '50'
@@ -7,12 +8,16 @@ print(int(number_test))
 # Esto genera error
 # print('Conversion de str numero a int' + int(number_test))
 
+math.cos()
+
 print('Conver from str number_test to int: ' + number_test)
 
 # Concatenate 
 """ The varibles str, always have to be into ' varible ' """
 text_1 = 'Hola'
 text_2 = 'Mundo'
+type(text_1)
+len(text_1)
 
 print(text_1 + ' ' +  ' ' + text_2)
 
