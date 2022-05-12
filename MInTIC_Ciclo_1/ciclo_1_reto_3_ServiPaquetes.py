@@ -3,10 +3,10 @@ totalCost = 0
 
 for i in range(numberPackages):
     high = float(input())
-    wide = float(input())
+    width = float(input())
     deep = float(input())
 
-    volume = high * wide * deep
+    volume = high * width * deep
     cost_envio = volume * 5
 
     if high > 30:
